@@ -21,9 +21,10 @@ jobs:
     - uses: actions/checkout@v2
       with:
         fetch-depth: 0
-        projectBaseDir: js
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
+      with:
+        projectBaseDir: js
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
