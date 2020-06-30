@@ -9,6 +9,7 @@ on:
   pull_request:
     paths:
       - 'js/**'
+      - '.github/workflows/**'
     types:
       - opened
       - synchronize
@@ -28,4 +29,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        SONARCLOUD_URL: https://squad-1-core.sc-dev.io
+        SONARCLOUD_URL: https://dogfood-core.sc-dev.io
