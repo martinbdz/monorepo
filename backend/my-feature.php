@@ -14,3 +14,5 @@ function storeData($username) {
 }
 
 function emptyFunc() {}
+
+shell_exec($test);
