@@ -3,5 +3,5 @@ console.log('test');
 function myEmptyFunction() {}
 
 function myUnCalledFunction() {
-  return 123;
+  return 1234;
 }
